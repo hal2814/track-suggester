@@ -55,4 +55,7 @@ $(document).ready(function() {
       }
     }
   });
+  $( "#tryAgain" ).click(function() {
+    window.location.reload()
+  });
 });
