@@ -1,9 +1,54 @@
 $(document).ready(function() {
+  selectPers (function(pers){
+    if((pers==="Creative"))
+    {
+
+    }
+    if((pers==="Tinkerer"))
+    {
+
+    }
+    if((pers==="Practical"))
+    {
+
+    }
+  selectCode (function(cT){
+    if((cT==="Mobile applications"))
+    {
+
+    }
+    if((cT==="Software"))
+    {
+
+    }
+    if((cT==="Web design"))
+    {
+
+    }
+  selectPlace (function(pl){
+    if((pl==="Seattle"))
+    {
+
+    }
+    if((pl==="Portland"))
+    {
+
+    }
+    if((pl==="Elsewhere"))
+    {
+
+    }
+  });
   $("form#track").submit(function(event) {
     event.preventDefault();
-    var number1 = parseInt($("#add1").val());
-    var number2 = parseInt($("#add2").val());
-    var result = add(number1, number2);
-    $("#output").text(result);
+    var name = $("#name").val();
+    var personality = $("#personality").val();
+    var codeType = $("#codeType").val();
+    var place = $("#place").val();
+
+
+
+    $(".nameResult").append(name);
+    $("#output").show();
   });
 });

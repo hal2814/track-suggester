@@ -17,7 +17,26 @@ body{
 }
 
 #output{
-  background-color: #00ff9d;
+  display: none;
+}
+
+#ruby{
+  display: none;
+}
+
+#php{
+  display: none;
+}
+
+#javaAnd{
+  display: none;
+}
+
+#cssDesign{
+  display: none;
+}
+#cSharp{
+  display: none;
 }
 
 img{
