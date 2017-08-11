@@ -14,7 +14,7 @@
         <div class="col-md-4 well">
           <form id="track">
             <div class="form-group">
-              <label for="name">Full name:</label>
+              <label for="name">Name:</label>
               <input id="name" class="form-control" type="text">
             </div>
             <label for="personality">What best describes your personality?</label>
@@ -23,13 +23,42 @@
               <option>Tinkerer</option>
               <option>Practical</option>
             </select>
+
+            <label for="codeType">What best describes your coding passion?</label>
+            <select class="form-control" id="codeType">
+              <option>Mobile applications</option>
+              <option>Software</option>
+              <option>Web design</option>
+            </select>
+
+            <label for="place">Where do you live?</label>
+            <select class="form-control" id="place">
+              <option>Seattle</option>
+              <option>Portland</option>
+              <option>Elsewhere</option>
+            </select>
             <button type="submit" class="btn">Submit</button>
           </form>
           </div>
         <div class="col-md-8 well">
           <div id="output">
             <h2>Result:</h2>
-              <p>Based on your responses, the we think the best track to follow would be:</p>
+              <p>Based on your responses <span class="nameResult"></span>, we think the best track for you to follow would be:</p>
+
+          </div>
+          <div id="cSharp">
+
+          </div>
+          <div id="ruby">
+
+          </div>
+          <div id="php">
+
+          </div>
+          <div id="javaAnd">
+
+          </div>
+          <div id="cssDesign">
 
           </div>
         </div>
