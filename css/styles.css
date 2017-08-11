@@ -12,10 +12,6 @@ body{
   color:black;
 }
 
-.jumbotron{
-  background-color: #1cbc7f;
-}
-
 #output{
   display: none;
 }
@@ -39,6 +35,18 @@ body{
   display: none;
 }
 
-img{
+#seattle{
+  display: none;
+}
+
+#portland{
+  display: none;
+}
+
+img#banner{
   width: 100%;
+}
+
+img{
+  width: 75%;
 }
