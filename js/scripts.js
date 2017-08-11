@@ -3,11 +3,10 @@ select = (function(var1p,var2ct,value1,value2,output,name,lang){
   if((var1p===value1) && (var2ct===value2)){
     $("#output").show();
     $(".nameResult").append(name);
-    $(output).show();
+    $(output).slideToggle();
     $(".language").append(lang);
   }
 });
-
 
 $(document).ready(function() {
 
@@ -35,7 +34,6 @@ $(document).ready(function() {
     select(personality,codeType,"Practical","Software", ".cSharp",name,"C#/.NET");
 
     select(personality,codeType,"Practical","Web design", ".php",name,"PHP/Drupal");
-
 
     if((place==="Seattle"))
     {
