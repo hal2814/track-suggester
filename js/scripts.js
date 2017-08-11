@@ -1,13 +1,14 @@
 
-/*select (function(var1p,var2ct,val1,val2,output){
-  if((var1p===var2) && (var2ct===val2)){
+select = (function(var1p,var2ct,value1,value2,output,name,lang){
+  if((var1p===value1) && (var2ct===value2)){
     $("#output").show();
     $(".nameResult").append(name);
     $(output).show();
+    $(".language").append(lang);
   }
-  return 0;
 });
-*/
+
+
 $(document).ready(function() {
 
   $("form#track").submit(function(event) {
@@ -17,56 +18,40 @@ $(document).ready(function() {
     var codeType = $("#codeType").val();
     var place = $("#place").val();
 
+    select(personality,codeType,"Creative","Mobile applications", ".javaAnd",name,"Java/Android");
+
+    select(personality,codeType,"Creative","Software", ".ruby",name,"Ruby/Rails");
+
+    select(personality,codeType,"Creative","Web design", ".cssDesign",name,"CSS/Design");
+
+    select(personality,codeType,"Tinkerer","Mobile applications", ".javaAnd",name,"Java/Android");
+
+    select(personality,codeType,"Tinkerer","Software", ".ruby",name,"Ruby/Rails");
+
+    select(personality,codeType,"Tinkerer","Web design", ".php",name,"PHP/Drupal");
+
+    select(personality,codeType,"Practical","Mobile applications", ".javaAnd",name,"Java/Android");
+
+    select(personality,codeType,"Practical","Software", ".cSharp",name,"C#/.NET");
+
+    select(personality,codeType,"Practical","Web design", ".php",name,"PHP/Drupal");
 
 
-    select(personality,codeType,"Creative","Web design", "#cssDesign");
-
-    if((personality==="Creative") && (codeType==="Web design"))
-    {
-      $("#output").show();
-      $(".nameResult").append(name);
-      $("#cssDesign").show();
-    }
-    if((personality==="Tinkerer") && (codeType==="Mobile applications"))
-    {
-      $("#output").show();
-      $(".nameResult").append(name);
-      $("#javaAnd").show();
-    }
-    if((personality==="Practical") && (codeType==="Software"))
-    {
-      $("#output").show();
-      $(".nameResult").append(name);
-      $("#cSharp").show();
-    }
-    if((personality==="Creative") && (codeType==="Software"))
-    {
-      $("#output").show();
-      $(".nameResult").append(name);
-      $("#ruby").show();
-    }
-    if((personality==="Tinkerer") && (codeType==="Web design"))
-    {
-      $("#output").show();
-      $(".nameResult").append(name);
-      $("#php").show();
-    }
-    
     if((place==="Seattle"))
     {
-      $("#seattle").show();
+      $(".seattle").show();
     }
     if((place==="Portland"))
     {
-      $("#portland").show();
+      $(".portland").show();
     }
     if((place==="Elsewhere"))
     {
       if(personality==="Creative")
       {
-        $("#portland").show();
+        $(".portland").show();
       }else{
-        $("#seattle").show();
+        $(".seattle").show();
       }
     }
   });

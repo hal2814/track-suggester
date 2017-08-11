@@ -16,30 +16,30 @@ body{
   display: none;
 }
 
-#ruby{
+.ruby{
   display: none;
 }
 
-#php{
+.php{
   display: none;
 }
 
-#javaAnd{
+.javaAnd{
   display: none;
 }
 
-#cssDesign{
+.cssDesign{
   display: none;
 }
-#cSharp{
-  display: none;
-}
-
-#seattle{
+.cSharp{
   display: none;
 }
 
-#portland{
+.seattle{
+  display: none;
+}
+
+.portland{
   display: none;
 }
 
