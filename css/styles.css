@@ -1,0 +1,25 @@
+button{
+  margin: 5px;
+}
+
+body{
+  background-image: url("http://wallpapercave.com/wp/8xghT8f.jpg");
+  color: white;
+}
+
+.well{
+  background-color: #83efc6;
+  color:black;
+}
+
+.jumbotron{
+  background-color: #1cbc7f;
+}
+
+#output{
+  background-color: #00ff9d;
+}
+
+img{
+  width: 100%;
+}
