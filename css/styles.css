@@ -43,6 +43,19 @@ body{
   display: none;
 }
 
+.vim{
+  display: none;
+}
+.atom{
+  display: none;
+}
+.mac{
+  display: none;
+}
+.pc{
+  display: none;
+}
+
 img#banner{
   width: 100%;
 }

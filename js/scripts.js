@@ -1,12 +1,12 @@
 
-select = (function(var1p,var2ct,value1,value2,output,name,lang){
+function select(var1p,var2ct,value1,value2,output,name,lang){
   if((var1p===value1) && (var2ct===value2)){
     $("#output").show();
     $(".nameResult").append(name);
     $(output).slideToggle();
     $(".language").append(lang);
   }
-});
+};
 
 $(document).ready(function() {
 
@@ -16,6 +16,8 @@ $(document).ready(function() {
     var personality = $("#personality").val();
     var codeType = $("#codeType").val();
     var place = $("#place").val();
+    var vimOrAtom = $("#vimOrAtom").val();
+    var pcOrMac = $("#pcOrMac").val();
 
     select(personality,codeType,"Creative","Mobile applications", ".javaAnd",name,"Java/Android");
 
@@ -51,6 +53,22 @@ $(document).ready(function() {
       }else{
         $(".seattle").show();
       }
+    }
+    if(vimOrAtom==="Start from scratch")
+    {
+      $(".vim").show();
+    }
+    if(vimOrAtom==="Build on pre-made work")
+    {
+      $(".atom").show();
+    }
+    if(pcOrMac==="Sleek design and intuitive control")
+    {
+      $(".mac").show();
+    }
+    if(pcOrMac==="Raw power and customizablity")
+    {
+      $(".pc").show();
     }
   });
   $( "#tryAgain" ).click(function() {
